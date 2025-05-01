@@ -37,13 +37,13 @@ composer install
 2. Configure the database connection by editing the `app/Config/Database.php` file. Update the following settings:
 
 ```php
-public $default = [
-    'DSN'      => '',
-    'hostname' => 'localhost',   // Database hostname
-    'username' => 'your-db-username', // Database username
-    'password' => 'your-db-password', // Database password
-    'database' => 'your-db-name', // Database name
-    'DBDriver' => 'MySQLi', // Database driver
+public array $default = [
+    'DSN'          => '',
+    'hostname'     => 'your-hostname',
+    'username'     => 'your-username',
+    'password'     => 'your-password',
+    'database'     => 'your-database-name',
+    'DBDriver'     => 'MySQLi',
     ...
 ];
 ```
